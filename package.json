@@ -1,0 +1,50 @@
+{
+  "name": "@n4it/email-module",
+  "version": "0.0.1",
+  "description": "Package to manage emails on an event-driven way using NestJS and SendGrid.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "release": "semantic-release",
+    "build": "tsc"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "url": "https://github.com/nest4it/email-module"
+  },
+  "files": [
+    "./dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "nestjs",
+    "nest",
+    "sendgrid",
+    "n4it",
+    "events"
+  ],
+  "author": "Robert-Jan Kuyper <info@n4it.nl> (https://n4it.nl)",
+  "bugs": {
+    "url": "https://github.com/nest4it/email-module/issues",
+    "email": "info@n4it.nl"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "^10.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^10.0.4",
+    "@semantic-release/release-notes-generator": "^11.0.4",
+    "@types/node": "^20.4.5",
+    "semantic-release": "^21.0.7",
+    "tsx": "^3.12.8",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.4.1",
+    "@nestjs/event-emitter": "^2.0.4",
+    "@sendgrid/mail": "^8.1.3"
+  }
+}
