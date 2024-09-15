@@ -1,5 +1,5 @@
 {
-  "name": "@n4it/email-module",
+  "name": "@n4it/sendgrid-email-module",
   "version": "0.0.1",
   "description": "Package to manage emails on an event-driven way using NestJS and SendGrid.",
   "main": "./dist/index.js",
