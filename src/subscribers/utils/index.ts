@@ -1,4 +1,4 @@
-import { EventEmitter2 } from "@nestjs/event-emitter";
+import type { EventEmitter2 } from "@nestjs/event-emitter";
 import type { SendGridEmailModuleConfig } from "../../models";
 import * as sendgrid from "@sendgrid/mail";
 import type { EmailEventStart } from "../../models/events";

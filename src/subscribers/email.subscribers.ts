@@ -67,7 +67,9 @@ export class EmailSubscriberService {
         })
       );
     } catch (error) {
-      return this.options.logErrors && this.logger.error("Failed to handle sending emails error", evt.error.stack);
+      if (this.options.logErrors) {
+        this.logger.error("Failed to handle sending emails error", error.stack);
+      }
     }
   }
 }
